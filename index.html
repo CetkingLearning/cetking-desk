@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cetking Desk — Lead · Student · Alumni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="mark">Ck</div>
+        <div>
+          <h1>Cetking Desk</h1>
+          <p>Enquiry · Student · Alumni</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <button id="nav-overview" class="active"><span class="lab">Overview</span></button>
+        <button id="nav-enquiry"><span class="lab">Enquiry</span><span class="count" id="cnt-enq">0</span></button>
+        <button id="nav-students"><span class="lab">Students</span><span class="count" id="cnt-stu">0</span></button>
+        <button id="nav-alumni"><span class="lab">Alumni</span><span class="count" id="cnt-al">0</span></button>
+      </nav>
+      <div class="side-foot">
+        <div class="who">Signed in as <span id="who-line">Ananya Shah</span><span>Counsellor · Thane · demo data</span></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <h2 id="page-title">Overview</h2>
+        <div class="grow"></div>
+        <input class="search" id="search" placeholder="Search name, phone, exam…" />
+        <button class="btn" id="btn-reset">Reset demo</button>
+        <button class="btn primary" id="btn-add">New enquiry</button>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer"></aside>
+  <div class="modal" id="modal"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
